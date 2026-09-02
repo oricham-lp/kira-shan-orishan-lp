@@ -1,0 +1,371 @@
+<!-- きら☆シャン オリシャンLP: START -->
+<style>
+@charset "UTF-8";
+
+.きら☆シャン-lp-root {
+  --ks-ivory: #fffdf8;
+  --ks-cream: #f6f0e5;
+  --ks-gold: #b78a3f;
+  --ks-gold-dark: #775524;
+  --ks-ink: #2f2922;
+  --ks-muted: #71695f;
+  --ks-line: rgba(183, 138, 63, .32);
+  color: var(--ks-ink);
+  background: var(--ks-ivory);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  line-height: 1.8;
+  letter-spacing: 0;
+  overflow: hidden;
+  isolation: isolate;
+  -webkit-font-smoothing: antialiased;
+}
+
+.きら☆シャン-lp-root *, .きら☆シャン-lp-root *::before, .きら☆シャン-lp-root *::after { box-sizing: border-box; }
+.きら☆シャン-lp-root img { display: block; max-width: 100%; height: auto; }
+.きら☆シャン-lp-root a { color: inherit; text-decoration: none; }
+.きら☆シャン-lp-root h1, .きら☆シャン-lp-root h2, .きら☆シャン-lp-root h3, .きら☆シャン-lp-root p, .きら☆シャン-lp-root figure { margin: 0; }
+.きら☆シャン-lp-root ul, .きら☆シャン-lp-root ol { margin: 0; padding: 0; list-style: none; }
+
+.きら☆シャン-lp-inner { width: min(100% - 40px, 1080px); margin-inline: auto; }
+.きら☆シャン-lp-header { height: 70px; padding: 0 max(20px, calc((100% - 1080px) / 2)); display: flex; align-items: center; justify-content: space-between; background: rgba(255,253,248,.96); border-bottom: 1px solid var(--ks-line); position: relative; z-index: 20; }
+.きら☆シャン-lp-brand { display: inline-flex; align-items: center; gap: 10px; color: #825a20; font-size: 27px; font-weight: 700; line-height: 1; text-shadow: 0 1px 0 #fff, 0 4px 13px rgba(183,138,63,.18); }
+.きら☆シャン-lp-brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--ks-gold); border-radius: 50%; color: var(--ks-gold); background: rgba(255,255,255,.72); box-shadow: 0 0 0 4px rgba(183,138,63,.08); font-size: 16px; }
+.きら☆シャン-lp-header-cta { padding: 8px 22px; border: 1px solid var(--ks-gold); color: var(--ks-gold-dark); font-size: 13px; transition: .25s ease; }
+
+.きら☆シャン-lp-hero { min-height: min(860px, calc(100svh - 70px)); position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 48%); align-items: center; background: #f5eee2; }
+.きら☆シャン-lp-hero-image { position: absolute; inset: 0 0 0 auto; width: 62%; height: 100%; object-fit: cover; object-position: 62% center; }
+.きら☆シャン-lp-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, #fffdf8 0%, rgba(255,253,248,.98) 34%, rgba(255,253,248,.25) 67%, transparent 100%); }
+.きら☆シャン-lp-sparkles i { position: absolute; color: var(--ks-gold); font-style: normal; opacity: .55; }
+.きら☆シャン-lp-sparkles i:nth-child(1) { left: 6%; top: 12%; font-size: 26px; text-shadow: 18vw 110px 0 rgba(183,138,63,.25), 74vw 40px 0 rgba(183,138,63,.2), 88vw 350px 0 rgba(183,138,63,.24); }
+.きら☆シャン-lp-sparkles i:nth-child(2) { left: 42%; top: 24%; font-size: 34px; text-shadow: 34vw 120px 0 rgba(183,138,63,.17), -25vw 390px 0 rgba(183,138,63,.18); }
+.きら☆シャン-lp-sparkles i:nth-child(3) { left: 35%; bottom: 22%; font-size: 18px; text-shadow: 48vw -50px 0 rgba(183,138,63,.22), -22vw -130px 0 rgba(183,138,63,.18); }
+.きら☆シャン-lp-hero-copy { width: min(100% - 40px, 1080px); margin-inline: auto; position: relative; z-index: 3; grid-column: 1 / -1; padding-bottom: 110px; }
+.きら☆シャン-lp-kicker { color: var(--ks-gold-dark); font-size: 15px; }
+.きら☆シャン-lp-hero h1 { margin-top: 12px; color: var(--ks-gold-dark); font-size: clamp(72px, 8vw, 118px); font-weight: 500; line-height: .98; }
+.きら☆シャン-lp-hero h1 span { width: fit-content; padding: 0 4px 13px; position: relative; display: block; margin-bottom: 19px; color: #825a20; font-size: 34px; font-weight: 700; text-shadow: 0 1px 0 #fff, 0 6px 18px rgba(183,138,63,.2); }
+.きら☆シャン-lp-hero h1 span::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: linear-gradient(90deg, transparent, #b78a3f 14%, #dcc18e 50%, #b78a3f 86%, transparent); }
+.きら☆シャン-lp-hero-lead { margin-top: 24px !important; font-size: clamp(24px, 3vw, 38px); line-height: 1.45; }
+.きら☆シャン-lp-one-bottle { margin: 22px 0 28px; color: var(--ks-gold-dark); font-size: 20px; }
+.きら☆シャン-lp-one-bottle strong { margin-right: 4px; font-size: 42px; font-weight: 500; line-height: 1; }
+.きら☆シャン-lp-button { min-height: 58px; padding: 14px 25px; display: inline-flex; align-items: center; justify-content: center; gap: 20px; color: #fff !important; background: linear-gradient(135deg, #c29a53, #8c642a); box-shadow: 0 10px 25px rgba(119,85,36,.2); font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; font-size: 16px; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; }
+.きら☆シャン-lp-button span { transition: transform .2s ease; }
+.きら☆シャン-lp-button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(119,85,36,.3); filter: brightness(1.05); }
+.きら☆シャン-lp-button:hover span { transform: translateX(4px); }
+.きら☆シャン-lp-button:active { transform: translateY(1px) scale(.99); }
+.きら☆シャン-lp-hero-points { position: absolute; z-index: 4; left: 50%; bottom: 0; transform: translateX(-50%); width: min(100% - 40px, 1080px); display: grid; grid-template-columns: repeat(4, 1fr); background: rgba(255,253,248,.94); border-top: 1px solid var(--ks-line); border-inline: 1px solid var(--ks-line); }
+.きら☆シャン-lp-hero-points li { min-height: 94px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid var(--ks-line); }
+.きら☆シャン-lp-hero-points li:last-child { border-right: 0; }
+.きら☆シャン-lp-hero-points strong { color: var(--ks-gold-dark); font-size: 19px; font-weight: 600; }
+.きら☆シャン-lp-hero-points span { font-family: "Yu Gothic", sans-serif; color: var(--ks-muted); font-size: 12px; }
+
+.きら☆シャン-lp-section { padding: 110px 0; }
+.きら☆シャン-lp-section { position: relative; }
+.きら☆シャン-lp-section::after {
+  content: "✦";
+  position: absolute;
+  z-index: 0;
+  top: 6%;
+  left: 5%;
+  color: rgba(183, 138, 63, .24);
+  font-size: 17px;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow:
+    22vw 120px 0 rgba(183,138,63,.16),
+    48vw 26px 0 rgba(183,138,63,.21),
+    76vw 168px 0 rgba(183,138,63,.16),
+    86vw 420px 0 rgba(183,138,63,.22),
+    62vw 610px 0 rgba(183,138,63,.13),
+    28vw 520px 0 rgba(183,138,63,.18),
+    7vw 720px 0 rgba(183,138,63,.14);
+}
+.きら☆シャン-lp-section > .きら☆シャン-lp-inner { position: relative; z-index: 1; }
+.きら☆シャン-lp-eyebrow { margin-bottom: 10px !important; color: var(--ks-gold); font-family: Georgia, serif; font-size: 12px; letter-spacing: .18em !important; }
+.きら☆シャン-lp-section h2, .きら☆シャン-lp-final h2 { font-size: clamp(34px, 5vw, 58px); font-weight: 500; line-height: 1.4; }
+.きら☆シャン-lp-section h2 em { color: var(--ks-gold-dark); font-style: normal; }
+.きら☆シャン-lp-section-lead { max-width: 660px; margin-top: 22px !important; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 15px; }
+.きら☆シャン-lp-intro { position: relative; background: radial-gradient(circle at 93% 15%, rgba(194,154,83,.11) 0 1px, transparent 2px), var(--ks-ivory); background-size: 36px 36px; }
+.きら☆シャン-lp-feature-grid { margin-top: 55px; display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--ks-line); }
+.きら☆シャン-lp-feature { padding: 34px; border-right: 1px solid var(--ks-line); }
+.きら☆シャン-lp-feature:last-child { border-right: 0; }
+.きら☆シャン-lp-feature-no { color: var(--ks-gold); font-family: Georgia, serif; font-size: 13px; }
+.きら☆シャン-lp-feature h3 { margin: 14px 0 10px; font-size: 23px; font-weight: 500; }
+.きら☆シャン-lp-feature p { color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 14px; }
+
+.きら☆シャン-lp-showcase { background: var(--ks-cream); text-align: center; }
+.きら☆シャン-lp-product-figure { margin-top: 44px !important; }
+.きら☆シャン-lp-product-figure img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border: 8px solid #fff; box-shadow: 0 18px 50px rgba(90,70,40,.12); }
+.きら☆シャン-lp-product-figure figcaption { margin-top: 18px; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 13px; }
+.きら☆シャン-lp-tags { margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.きら☆シャン-lp-tags span { padding: 7px 16px; border: 1px solid var(--ks-line); border-radius: 999px; background: rgba(255,255,255,.5); color: var(--ks-gold-dark); font-family: "Yu Gothic", sans-serif; font-size: 12px; }
+
+.きら☆シャン-lp-keyholder { background: #fff; }
+.きら☆シャン-lp-split { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 70px; }
+.きら☆シャン-lp-keyholder-visual { position: relative; overflow: hidden; aspect-ratio: 4 / 3; }
+.きら☆シャン-lp-keyholder-visual img { width: 100%; height: 100%; object-fit: cover; object-position: left bottom; }
+.きら☆シャン-lp-keyholder-copy h2 { color: var(--ks-gold-dark); }
+.きら☆シャン-lp-keyholder-copy > p:not(.きら☆シャン-lp-eyebrow) { margin-top: 24px; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 15px; }
+.きら☆シャン-lp-keyholder-copy .きら☆シャン-lp-note { padding-top: 18px; border-top: 1px solid var(--ks-line); color: var(--ks-gold-dark) !important; }
+
+.きら☆シャン-lp-flow { background: linear-gradient(140deg, #fffdf8 0 66%, #f8f1e5 66%); }
+.きら☆シャン-lp-steps { margin-top: 55px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.きら☆シャン-lp-steps li { min-height: 330px; padding: 38px 28px 32px; position: relative; display: flex; flex-direction: column; justify-content: flex-end; background: rgba(255,255,255,.78); border: 1px solid var(--ks-line); box-shadow: 0 12px 32px rgba(93,70,37,.06); }
+.きら☆シャン-lp-step-no { position: absolute; top: 24px; right: 25px; color: rgba(183,138,63,.22); font: 82px/1 Georgia, serif; }
+.きら☆シャン-lp-steps small { color: var(--ks-gold); font: 12px Georgia, serif; letter-spacing: .14em; }
+.きら☆シャン-lp-steps h3 { margin: 10px 0 18px; padding-bottom: 16px; border-bottom: 1px solid var(--ks-line); font-size: 25px; font-weight: 500; }
+.きら☆シャン-lp-steps p { color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 14px; }
+
+.きら☆シャン-lp-delivery { background: #302b25; color: #fff; }
+.きら☆シャン-lp-delivery .きら☆シャン-lp-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+.きら☆シャン-lp-delivery h2 { color: #fff; }
+.きら☆シャン-lp-delivery-list article { padding: 25px 0; display: grid; grid-template-columns: 64px 1fr; gap: 22px; border-bottom: 1px solid rgba(255,255,255,.18); }
+.きら☆シャン-lp-delivery-list article:first-child { padding-top: 0; }
+.きら☆シャン-lp-delivery-list article > span { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid rgba(194,154,83,.7); color: #d5b77e; font: 16px Georgia, serif; }
+.きら☆シャン-lp-delivery-list h3 { color: #f2d9a8; font-size: 22px; font-weight: 500; }
+.きら☆シャン-lp-delivery-list p { color: rgba(255,255,255,.7); font-family: "Yu Gothic", sans-serif; font-size: 13px; }
+
+.きら☆シャン-lp-final { min-height: 540px; padding: 110px 0; position: relative; display: grid; place-items: center; overflow: hidden; background: linear-gradient(135deg, #f9f3e8, #fff); text-align: center; }
+.きら☆シャン-lp-final::before, .きら☆シャン-lp-final::after { content: ""; position: absolute; width: 280px; height: 280px; border: 1px solid rgba(183,138,63,.2); border-radius: 50%; }
+.きら☆シャン-lp-final::before { left: -130px; top: -130px; }
+.きら☆シャン-lp-final::after { right: -130px; bottom: -130px; }
+.きら☆シャン-lp-final-glow { position: absolute; inset: 0; opacity: .7; background-image: radial-gradient(circle, rgba(183,138,63,.32) 1px, transparent 1.5px); background-size: 46px 46px; mask-image: linear-gradient(90deg, #000, transparent 35%, transparent 65%, #000); }
+.きら☆シャン-lp-final .きら☆シャン-lp-inner { position: relative; z-index: 2; }
+.きら☆シャン-lp-final p:not(.きら☆シャン-lp-eyebrow) { margin: 20px 0 30px; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; }
+.きら☆シャン-lp-final small { margin-top: 14px; display: block; color: var(--ks-gold-dark); }
+.きら☆シャン-lp-button-dark { min-width: 310px; }
+.きら☆シャン-lp-footer { padding: 36px 20px; display: flex; align-items: center; justify-content: center; gap: 25px; border-top: 1px solid var(--ks-line); background: #fff; }
+.きら☆シャン-lp-footer p { color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 12px; }
+.きら☆シャン-lp-fixed-cta { display: none; }
+
+.きら☆シャン-lp-motion .きら☆シャン-lp-reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+.きら☆シャン-lp-reveal.きら☆シャン-lp-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .きら☆シャン-lp-motion .きら☆シャン-lp-reveal { opacity: 1; transform: none; transition: none; } .きら☆シャン-lp-button { transition: none; } }
+
+@media (max-width: 820px) {
+  .きら☆シャン-lp-hero { min-height: 800px; display: block; }
+  .きら☆シャン-lp-hero-image { width: 100%; height: 66%; inset: 34% 0 auto; object-position: 63% 38%; }
+  .きら☆シャン-lp-hero-shade { background: linear-gradient(180deg, #fffdf8 0%, rgba(255,253,248,.98) 28%, rgba(255,253,248,.25) 56%, rgba(255,253,248,.1) 100%); }
+  .きら☆シャン-lp-hero-copy { padding-top: 56px; padding-bottom: 0; }
+  .きら☆シャン-lp-hero h1 { font-size: 72px; }
+  .きら☆シャン-lp-hero-lead { font-size: 25px; }
+  .きら☆シャン-lp-hero-copy .きら☆シャン-lp-button { display: none; }
+  .きら☆シャン-lp-hero-points { grid-template-columns: repeat(2, 1fr); }
+  .きら☆シャン-lp-hero-points li { min-height: 70px; }
+  .きら☆シャン-lp-hero-points li:nth-child(2) { border-right: 0; }
+  .きら☆シャン-lp-hero-points li:nth-child(-n+2) { border-bottom: 1px solid var(--ks-line); }
+  .きら☆シャン-lp-feature-grid, .きら☆シャン-lp-steps { grid-template-columns: 1fr; }
+  .きら☆シャン-lp-feature { border-right: 0; border-bottom: 1px solid var(--ks-line); }
+  .きら☆シャン-lp-feature:last-child { border-bottom: 0; }
+  .きら☆シャン-lp-split, .きら☆シャン-lp-delivery .きら☆シャン-lp-inner { grid-template-columns: 1fr; gap: 42px; }
+  .きら☆シャン-lp-keyholder-copy { text-align: center; }
+  .きら☆シャン-lp-delivery-head { text-align: center; }
+}
+
+@media (max-width: 560px) {
+  .きら☆シャン-lp-root { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .きら☆シャン-lp-inner { width: min(100% - 32px, 1080px); }
+  .きら☆シャン-lp-header { height: 58px; padding-inline: 16px; }
+  .きら☆シャン-lp-brand { gap: 8px; font-size: 21px; }
+  .きら☆シャン-lp-brand-mark { width: 29px; height: 29px; font-size: 12px; box-shadow: 0 0 0 3px rgba(183,138,63,.08); }
+  .きら☆シャン-lp-header-cta { display: none; }
+  .きら☆シャン-lp-hero { min-height: 780px; }
+  .きら☆シャン-lp-hero-copy { width: calc(100% - 32px); padding-top: 38px; }
+  .きら☆シャン-lp-kicker { font-size: 12px; }
+  .きら☆シャン-lp-hero h1 { font-size: 56px; }
+  .きら☆シャン-lp-hero h1 span { margin-bottom: 13px; padding-bottom: 9px; font-size: 25px; }
+  .きら☆シャン-lp-hero-lead { margin-top: 18px !important; font-size: 19px; }
+  .きら☆シャン-lp-one-bottle { margin-top: 12px; font-size: 15px; }
+  .きら☆シャン-lp-one-bottle strong { font-size: 32px; }
+  .きら☆シャン-lp-hero-image { height: 70%; inset: 30% 0 auto; object-position: 61% 35%; }
+  .きら☆シャン-lp-hero-points { width: calc(100% - 24px); }
+  .きら☆シャン-lp-hero-points strong { font-size: 15px; }
+  .きら☆シャン-lp-hero-points span { font-size: 10px; }
+  .きら☆シャン-lp-section { padding: 76px 0; }
+  .きら☆シャン-lp-section h2, .きら☆シャン-lp-final h2 { font-size: 34px; }
+  .きら☆シャン-lp-section-lead { font-size: 14px; }
+  .きら☆シャン-lp-feature-grid { margin-top: 36px; }
+  .きら☆シャン-lp-feature { padding: 25px 20px; }
+  .きら☆シャン-lp-feature h3 { font-size: 21px; }
+  .きら☆シャン-lp-product-figure { margin-top: 32px !important; }
+  .きら☆シャン-lp-product-figure img { aspect-ratio: 4 / 5; object-position: center; }
+  .きら☆シャン-lp-keyholder-visual { aspect-ratio: 1 / 1; }
+  .きら☆シャン-lp-product-figure img { aspect-ratio: 4 / 3; }
+  .きら☆シャン-lp-keyholder-visual img { object-position: left bottom; }
+  .きら☆シャン-lp-steps { margin-top: 36px; }
+  .きら☆シャン-lp-steps li { min-height: 280px; }
+  .きら☆シャン-lp-delivery-list article { grid-template-columns: 52px 1fr; gap: 15px; }
+  .きら☆シャン-lp-delivery-list article > span { width: 48px; height: 48px; }
+  .きら☆シャン-lp-delivery-list h3 { font-size: 19px; }
+  .きら☆シャン-lp-final { min-height: 510px; padding: 78px 0; }
+  .きら☆シャン-lp-final p:not(.きら☆シャン-lp-eyebrow) { font-size: 14px; }
+  .きら☆シャン-lp-button-dark { min-width: 0; width: 100%; }
+  .きら☆シャン-lp-footer { padding: 28px 16px; display: block; text-align: center; }
+  .きら☆シャン-lp-footer p { margin-top: 8px; }
+  .きら☆シャン-lp-fixed-cta { position: fixed; z-index: 9999; inset: auto 0 0; display: block; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(255,253,248,.96); border-top: 1px solid var(--ks-line); backdrop-filter: blur(10px); }
+  .きら☆シャン-lp-fixed-cta a { min-height: 54px; display: flex; align-items: center; justify-content: center; gap: 18px; color: #fff; background: linear-gradient(135deg, #c29a53, #8c642a); box-shadow: 0 8px 20px rgba(119,85,36,.22); font-family: "Yu Gothic", sans-serif; font-size: 15px; font-weight: 700; }
+  .きら☆シャン-lp-fixed-cta a:active { transform: scale(.985); }
+}
+
+</style>
+<main class="きら☆シャン-lp-root">
+    <header class="きら☆シャン-lp-header" aria-label="きら☆シャン">
+      <a class="きら☆シャン-lp-brand" href="#top" aria-label="ページ上部へ">
+        <span class="きら☆シャン-lp-brand-mark" aria-hidden="true">✦</span>
+        <span>きら<span aria-hidden="true">☆</span>シャン</span>
+      </a>
+      <a class="きら☆シャン-lp-header-cta" href="https://oricham.net/">注文する</a>
+    </header>
+
+    <section class="きら☆シャン-lp-hero" id="top">
+      <img class="きら☆シャン-lp-hero-image" src="/wp-content/uploads/kira-shan-orishan-lp/assets/images/kira-shan-hero-v4.png" alt="架空女性の写真とYUNA Happy Birthdayをフルカラーで印刷したオリシャンを持つ架空モデル" width="1120" height="1400" fetchpriority="high">
+      <div class="きら☆シャン-lp-hero-shade" aria-hidden="true"></div>
+      <div class="きら☆シャン-lp-sparkles" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i></div>
+      <div class="きら☆シャン-lp-hero-copy">
+        <p class="きら☆シャン-lp-kicker">写真も、名前も、想いも。</p>
+        <h1><span>きら☆シャン</span>オリシャン</h1>
+        <p class="きら☆シャン-lp-hero-lead">世界にひとつの<br>オリジナルシャンパン</p>
+        <div class="きら☆シャン-lp-one-bottle"><strong>1</strong>本から作成できます</div>
+        <a class="きら☆シャン-lp-button" href="https://oricham.net/">オリシャンを注文する <span aria-hidden="true">→</span></a>
+      </div>
+      <ul class="きら☆シャン-lp-hero-points" aria-label="サービスのポイント">
+        <li><strong>1本から</strong><span>作成できます</span></li>
+        <li><strong>5日後</strong><span>お届け</span></li>
+        <li><strong>翌日出荷</strong><span>オプションあり</span></li>
+        <li><strong>日本全国</strong><span>配送対応</span></li>
+      </ul>
+    </section>
+
+    <section class="きら☆シャン-lp-section きら☆シャン-lp-intro きら☆シャン-lp-reveal">
+      <div class="きら☆シャン-lp-inner">
+        <p class="きら☆シャン-lp-eyebrow">MAKE YOUR MOMENT SHINE</p>
+        <h2>かわいさ、全部盛り。<br><em>映えるオリシャン</em></h2>
+        <p class="きら☆シャン-lp-section-lead">写真や名前を入れて特別な1本に。白とゴールドを基調にした上品なシュリンク加工で、どこから見ても華やかに仕上げます。</p>
+        <div class="きら☆シャン-lp-feature-grid">
+          <article class="きら☆シャン-lp-feature">
+            <span class="きら☆シャン-lp-feature-no">01</span>
+            <h3>かわいく目立つ</h3>
+            <p>ボトル全体を包むシュリンク加工。写真も装飾も大きく映えて、テーブルの主役になります。</p>
+          </article>
+          <article class="きら☆シャン-lp-feature">
+            <span class="きら☆シャン-lp-feature-no">02</span>
+            <h3>スマホでデザイン作成</h3>
+            <p>お気に入りの写真、名前、メッセージ、ロゴまで。イメージに合わせてご提案します。</p>
+          </article>
+          <article class="きら☆シャン-lp-feature">
+            <span class="きら☆シャン-lp-feature-no">03</span>
+            <h3>ギフトにも推し活にも</h3>
+            <p>誕生日、記念日、イベント、プレゼントに。映えるデザインで特別感たっぷりです。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="きら☆シャン-lp-section きら☆シャン-lp-showcase きら☆シャン-lp-reveal">
+      <div class="きら☆シャン-lp-inner">
+        <p class="きら☆シャン-lp-eyebrow">DESIGN COLLECTION</p>
+        <h2>ボトルデザイン事例</h2>
+        <figure class="きら☆シャン-lp-product-figure">
+          <img src="/wp-content/uploads/kira-shan-orishan-lp/assets/images/kira-shan-products-v5.png" alt="長い金フォイルと黒金ネックシールを施した4種類のフルカラーオリシャンと正方形に近い横向きアクリルキーホルダー" width="1536" height="1024" loading="lazy" decoding="async">
+          <figcaption>写真・名前・メッセージ・店舗ロゴを、ボトル全面へ鮮やかにプリントします。</figcaption>
+        </figure>
+        <div class="きら☆シャン-lp-tags" aria-label="利用シーン">
+          <span>Happy Birthday</span><span>1st Anniversary</span><span>人物写真</span><span>店舗ロゴ</span><span>推し活</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="きら☆シャン-lp-section きら☆シャン-lp-keyholder きら☆シャン-lp-reveal">
+      <div class="きら☆シャン-lp-inner きら☆シャン-lp-split">
+        <div class="きら☆シャン-lp-keyholder-visual">
+          <img src="/wp-content/uploads/kira-shan-orishan-lp/assets/images/kira-shan-keyholder-v4.png" alt="中央にセットで並べたMIOのオリシャンと実物比に近いサイズの横向きアクリルキーホルダー" width="1456" height="1092" loading="lazy" decoding="async">
+        </div>
+        <div class="きら☆シャン-lp-keyholder-copy">
+          <p class="きら☆シャン-lp-eyebrow">SPECIAL GIFT</p>
+          <h2>アクリル<br>キーホルダー付き！</h2>
+          <p>オリシャンのデザインを、持ち歩ける思い出に。透明感のある正方形に近い横向きアクリルとボールチェーンで、ボトルとおそろいのデザインを楽しめます。</p>
+          <p class="きら☆シャン-lp-note">プレゼントや推し活にも最適です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="きら☆シャン-lp-section きら☆シャン-lp-flow きら☆シャン-lp-reveal">
+      <div class="きら☆シャン-lp-inner">
+        <p class="きら☆シャン-lp-eyebrow">HOW TO ORDER</p>
+        <h2>注文はかんたん</h2>
+        <p class="きら☆シャン-lp-section-lead">世界にひとつのオリシャンを、スピーディーにお届けします。</p>
+        <ol class="きら☆シャン-lp-steps">
+          <li>
+            <span class="きら☆シャン-lp-step-no">1</span>
+            <div><small>STEP 1</small><h3>スマホでデザイン作成</h3><p>スマホから写真やメッセージ、ロゴなどを送信。ご希望に合わせてデザインを作成します。</p></div>
+          </li>
+          <li>
+            <span class="きら☆シャン-lp-step-no">2</span>
+            <div><small>STEP 2</small><h3>制作スタート</h3><p>入金確認後、制作を開始。職人が丁寧に仕上げます。</p></div>
+          </li>
+          <li>
+            <span class="きら☆シャン-lp-step-no">3</span>
+            <div><small>STEP 3</small><h3>5日後お届け</h3><p>最短5日でお届け。イベントやサプライズにも対応します。</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="きら☆シャン-lp-section きら☆シャン-lp-delivery きら☆シャン-lp-reveal">
+      <div class="きら☆シャン-lp-inner">
+        <div class="きら☆シャン-lp-delivery-head">
+          <p class="きら☆シャン-lp-eyebrow">DELIVERY INFORMATION</p>
+          <h2>大切な日に、<br>間に合う安心。</h2>
+        </div>
+        <div class="きら☆シャン-lp-delivery-list">
+          <article><span aria-hidden="true">05</span><div><h3>5日後お届け</h3><p>ご入金とデザイン確定後、最短5日でお届けします。</p></div></article>
+          <article><span aria-hidden="true">→</span><div><h3>翌日出荷オプション</h3><p>お急ぎのご注文にも対応。詳しい条件はご相談ください。</p></div></article>
+          <article><span aria-hidden="true">JP</span><div><h3>日本全国配送対応</h3><p>全国各地へ、丁寧に梱包してお届けします。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="きら☆シャン-lp-final きら☆シャン-lp-reveal">
+      <div class="きら☆シャン-lp-final-glow" aria-hidden="true"></div>
+      <div class="きら☆シャン-lp-inner">
+        <p class="きら☆シャン-lp-eyebrow">YOUR SPECIAL BOTTLE</p>
+        <h2>特別な1本を、<br>もっと華やかに。</h2>
+        <p>イメージが決まっていなくても大丈夫です。<br>まずはお気軽にご相談ください。</p>
+        <a class="きら☆シャン-lp-button きら☆シャン-lp-button-dark" href="https://oricham.net/">オリシャンを注文する <span aria-hidden="true">→</span></a>
+        <small>1本から作成できます</small>
+      </div>
+    </section>
+
+    <footer class="きら☆シャン-lp-footer">
+      <div class="きら☆シャン-lp-brand"><span class="きら☆シャン-lp-brand-mark" aria-hidden="true">✦</span><span>きら☆シャン</span></div>
+      <p>オリジナルシャンパンで、忘れられない瞬間を。</p>
+    </footer>
+
+    <div class="きら☆シャン-lp-fixed-cta">
+      <a href="https://oricham.net/">オリシャンを注文する <span aria-hidden="true">→</span></a>
+    </div>
+  </main>
+<script>
+(() => {
+  const root = document.querySelector('.きら☆シャン-lp-root');
+  if (!root) return;
+
+  const revealItems = root.querySelectorAll('.きら☆シャン-lp-reveal');
+  root.classList.add('きら☆シャン-lp-motion');
+  if (!('IntersectionObserver' in window)) {
+    revealItems.forEach((item) => item.classList.add('きら☆シャン-lp-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, currentObserver) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('きら☆シャン-lp-visible');
+      currentObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -28px' });
+
+  revealItems.forEach((item) => observer.observe(item));
+})();
+
+</script>
+<!-- きら☆シャン オリシャンLP: END -->

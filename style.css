@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+.きら☆シャン-lp-root {
+  --ks-ivory: #fffdf8;
+  --ks-cream: #f6f0e5;
+  --ks-gold: #b78a3f;
+  --ks-gold-dark: #775524;
+  --ks-ink: #2f2922;
+  --ks-muted: #71695f;
+  --ks-line: rgba(183, 138, 63, .32);
+  color: var(--ks-ink);
+  background: var(--ks-ivory);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  line-height: 1.8;
+  letter-spacing: 0;
+  overflow: hidden;
+  isolation: isolate;
+  -webkit-font-smoothing: antialiased;
+}
+
+.きら☆シャン-lp-root *, .きら☆シャン-lp-root *::before, .きら☆シャン-lp-root *::after { box-sizing: border-box; }
+.きら☆シャン-lp-root img { display: block; max-width: 100%; height: auto; }
+.きら☆シャン-lp-root a { color: inherit; text-decoration: none; }
+.きら☆シャン-lp-root h1, .きら☆シャン-lp-root h2, .きら☆シャン-lp-root h3, .きら☆シャン-lp-root p, .きら☆シャン-lp-root figure { margin: 0; }
+.きら☆シャン-lp-root ul, .きら☆シャン-lp-root ol { margin: 0; padding: 0; list-style: none; }
+
+.きら☆シャン-lp-inner { width: min(100% - 40px, 1080px); margin-inline: auto; }
+.きら☆シャン-lp-header { height: 70px; padding: 0 max(20px, calc((100% - 1080px) / 2)); display: flex; align-items: center; justify-content: space-between; background: rgba(255,253,248,.96); border-bottom: 1px solid var(--ks-line); position: relative; z-index: 20; }
+.きら☆シャン-lp-brand { display: inline-flex; align-items: center; gap: 10px; color: #825a20; font-size: 27px; font-weight: 700; line-height: 1; text-shadow: 0 1px 0 #fff, 0 4px 13px rgba(183,138,63,.18); }
+.きら☆シャン-lp-brand-mark { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--ks-gold); border-radius: 50%; color: var(--ks-gold); background: rgba(255,255,255,.72); box-shadow: 0 0 0 4px rgba(183,138,63,.08); font-size: 16px; }
+.きら☆シャン-lp-header-cta { padding: 8px 22px; border: 1px solid var(--ks-gold); color: var(--ks-gold-dark); font-size: 13px; transition: .25s ease; }
+
+.きら☆シャン-lp-hero { min-height: min(860px, calc(100svh - 70px)); position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(420px, 48%); align-items: center; background: #f5eee2; }
+.きら☆シャン-lp-hero-image { position: absolute; inset: 0 0 0 auto; width: 62%; height: 100%; object-fit: cover; object-position: 62% center; }
+.きら☆シャン-lp-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, #fffdf8 0%, rgba(255,253,248,.98) 34%, rgba(255,253,248,.25) 67%, transparent 100%); }
+.きら☆シャン-lp-sparkles i { position: absolute; color: var(--ks-gold); font-style: normal; opacity: .55; }
+.きら☆シャン-lp-sparkles i:nth-child(1) { left: 6%; top: 12%; font-size: 26px; text-shadow: 18vw 110px 0 rgba(183,138,63,.25), 74vw 40px 0 rgba(183,138,63,.2), 88vw 350px 0 rgba(183,138,63,.24); }
+.きら☆シャン-lp-sparkles i:nth-child(2) { left: 42%; top: 24%; font-size: 34px; text-shadow: 34vw 120px 0 rgba(183,138,63,.17), -25vw 390px 0 rgba(183,138,63,.18); }
+.きら☆シャン-lp-sparkles i:nth-child(3) { left: 35%; bottom: 22%; font-size: 18px; text-shadow: 48vw -50px 0 rgba(183,138,63,.22), -22vw -130px 0 rgba(183,138,63,.18); }
+.きら☆シャン-lp-hero-copy { width: min(100% - 40px, 1080px); margin-inline: auto; position: relative; z-index: 3; grid-column: 1 / -1; padding-bottom: 110px; }
+.きら☆シャン-lp-kicker { color: var(--ks-gold-dark); font-size: 15px; }
+.きら☆シャン-lp-hero h1 { margin-top: 12px; color: var(--ks-gold-dark); font-size: clamp(72px, 8vw, 118px); font-weight: 500; line-height: .98; }
+.きら☆シャン-lp-hero h1 span { width: fit-content; padding: 0 4px 13px; position: relative; display: block; margin-bottom: 19px; color: #825a20; font-size: 34px; font-weight: 700; text-shadow: 0 1px 0 #fff, 0 6px 18px rgba(183,138,63,.2); }
+.きら☆シャン-lp-hero h1 span::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: linear-gradient(90deg, transparent, #b78a3f 14%, #dcc18e 50%, #b78a3f 86%, transparent); }
+.きら☆シャン-lp-hero-lead { margin-top: 24px !important; font-size: clamp(24px, 3vw, 38px); line-height: 1.45; }
+.きら☆シャン-lp-one-bottle { margin: 22px 0 28px; color: var(--ks-gold-dark); font-size: 20px; }
+.きら☆シャン-lp-one-bottle strong { margin-right: 4px; font-size: 42px; font-weight: 500; line-height: 1; }
+.きら☆シャン-lp-button { min-height: 58px; padding: 14px 25px; display: inline-flex; align-items: center; justify-content: center; gap: 20px; color: #fff !important; background: linear-gradient(135deg, #c29a53, #8c642a); box-shadow: 0 10px 25px rgba(119,85,36,.2); font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; font-size: 16px; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; }
+.きら☆シャン-lp-button span { transition: transform .2s ease; }
+.きら☆シャン-lp-button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(119,85,36,.3); filter: brightness(1.05); }
+.きら☆シャン-lp-button:hover span { transform: translateX(4px); }
+.きら☆シャン-lp-button:active { transform: translateY(1px) scale(.99); }
+.きら☆シャン-lp-hero-points { position: absolute; z-index: 4; left: 50%; bottom: 0; transform: translateX(-50%); width: min(100% - 40px, 1080px); display: grid; grid-template-columns: repeat(4, 1fr); background: rgba(255,253,248,.94); border-top: 1px solid var(--ks-line); border-inline: 1px solid var(--ks-line); }
+.きら☆シャン-lp-hero-points li { min-height: 94px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1px solid var(--ks-line); }
+.きら☆シャン-lp-hero-points li:last-child { border-right: 0; }
+.きら☆シャン-lp-hero-points strong { color: var(--ks-gold-dark); font-size: 19px; font-weight: 600; }
+.きら☆シャン-lp-hero-points span { font-family: "Yu Gothic", sans-serif; color: var(--ks-muted); font-size: 12px; }
+
+.きら☆シャン-lp-section { padding: 110px 0; }
+.きら☆シャン-lp-section { position: relative; }
+.きら☆シャン-lp-section::after {
+  content: "✦";
+  position: absolute;
+  z-index: 0;
+  top: 6%;
+  left: 5%;
+  color: rgba(183, 138, 63, .24);
+  font-size: 17px;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow:
+    22vw 120px 0 rgba(183,138,63,.16),
+    48vw 26px 0 rgba(183,138,63,.21),
+    76vw 168px 0 rgba(183,138,63,.16),
+    86vw 420px 0 rgba(183,138,63,.22),
+    62vw 610px 0 rgba(183,138,63,.13),
+    28vw 520px 0 rgba(183,138,63,.18),
+    7vw 720px 0 rgba(183,138,63,.14);
+}
+.きら☆シャン-lp-section > .きら☆シャン-lp-inner { position: relative; z-index: 1; }
+.きら☆シャン-lp-eyebrow { margin-bottom: 10px !important; color: var(--ks-gold); font-family: Georgia, serif; font-size: 12px; letter-spacing: .18em !important; }
+.きら☆シャン-lp-section h2, .きら☆シャン-lp-final h2 { font-size: clamp(34px, 5vw, 58px); font-weight: 500; line-height: 1.4; }
+.きら☆シャン-lp-section h2 em { color: var(--ks-gold-dark); font-style: normal; }
+.きら☆シャン-lp-section-lead { max-width: 660px; margin-top: 22px !important; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 15px; }
+.きら☆シャン-lp-intro { position: relative; background: radial-gradient(circle at 93% 15%, rgba(194,154,83,.11) 0 1px, transparent 2px), var(--ks-ivory); background-size: 36px 36px; }
+.きら☆シャン-lp-feature-grid { margin-top: 55px; display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--ks-line); }
+.きら☆シャン-lp-feature { padding: 34px; border-right: 1px solid var(--ks-line); }
+.きら☆シャン-lp-feature:last-child { border-right: 0; }
+.きら☆シャン-lp-feature-no { color: var(--ks-gold); font-family: Georgia, serif; font-size: 13px; }
+.きら☆シャン-lp-feature h3 { margin: 14px 0 10px; font-size: 23px; font-weight: 500; }
+.きら☆シャン-lp-feature p { color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 14px; }
+
+.きら☆シャン-lp-showcase { background: var(--ks-cream); text-align: center; }
+.きら☆シャン-lp-product-figure { margin-top: 44px !important; }
+.きら☆シャン-lp-product-figure img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border: 8px solid #fff; box-shadow: 0 18px 50px rgba(90,70,40,.12); }
+.きら☆シャン-lp-product-figure figcaption { margin-top: 18px; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 13px; }
+.きら☆シャン-lp-tags { margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.きら☆シャン-lp-tags span { padding: 7px 16px; border: 1px solid var(--ks-line); border-radius: 999px; background: rgba(255,255,255,.5); color: var(--ks-gold-dark); font-family: "Yu Gothic", sans-serif; font-size: 12px; }
+
+.きら☆シャン-lp-keyholder { background: #fff; }
+.きら☆シャン-lp-split { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 70px; }
+.きら☆シャン-lp-keyholder-visual { position: relative; overflow: hidden; aspect-ratio: 4 / 3; }
+.きら☆シャン-lp-keyholder-visual img { width: 100%; height: 100%; object-fit: cover; object-position: left bottom; }
+.きら☆シャン-lp-keyholder-copy h2 { color: var(--ks-gold-dark); }
+.きら☆シャン-lp-keyholder-copy > p:not(.きら☆シャン-lp-eyebrow) { margin-top: 24px; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 15px; }
+.きら☆シャン-lp-keyholder-copy .きら☆シャン-lp-note { padding-top: 18px; border-top: 1px solid var(--ks-line); color: var(--ks-gold-dark) !important; }
+
+.きら☆シャン-lp-flow { background: linear-gradient(140deg, #fffdf8 0 66%, #f8f1e5 66%); }
+.きら☆シャン-lp-steps { margin-top: 55px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.きら☆シャン-lp-steps li { min-height: 330px; padding: 38px 28px 32px; position: relative; display: flex; flex-direction: column; justify-content: flex-end; background: rgba(255,255,255,.78); border: 1px solid var(--ks-line); box-shadow: 0 12px 32px rgba(93,70,37,.06); }
+.きら☆シャン-lp-step-no { position: absolute; top: 24px; right: 25px; color: rgba(183,138,63,.22); font: 82px/1 Georgia, serif; }
+.きら☆シャン-lp-steps small { color: var(--ks-gold); font: 12px Georgia, serif; letter-spacing: .14em; }
+.きら☆シャン-lp-steps h3 { margin: 10px 0 18px; padding-bottom: 16px; border-bottom: 1px solid var(--ks-line); font-size: 25px; font-weight: 500; }
+.きら☆シャン-lp-steps p { color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 14px; }
+
+.きら☆シャン-lp-delivery { background: #302b25; color: #fff; }
+.きら☆シャン-lp-delivery .きら☆シャン-lp-inner { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; }
+.きら☆シャン-lp-delivery h2 { color: #fff; }
+.きら☆シャン-lp-delivery-list article { padding: 25px 0; display: grid; grid-template-columns: 64px 1fr; gap: 22px; border-bottom: 1px solid rgba(255,255,255,.18); }
+.きら☆シャン-lp-delivery-list article:first-child { padding-top: 0; }
+.きら☆シャン-lp-delivery-list article > span { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid rgba(194,154,83,.7); color: #d5b77e; font: 16px Georgia, serif; }
+.きら☆シャン-lp-delivery-list h3 { color: #f2d9a8; font-size: 22px; font-weight: 500; }
+.きら☆シャン-lp-delivery-list p { color: rgba(255,255,255,.7); font-family: "Yu Gothic", sans-serif; font-size: 13px; }
+
+.きら☆シャン-lp-final { min-height: 540px; padding: 110px 0; position: relative; display: grid; place-items: center; overflow: hidden; background: linear-gradient(135deg, #f9f3e8, #fff); text-align: center; }
+.きら☆シャン-lp-final::before, .きら☆シャン-lp-final::after { content: ""; position: absolute; width: 280px; height: 280px; border: 1px solid rgba(183,138,63,.2); border-radius: 50%; }
+.きら☆シャン-lp-final::before { left: -130px; top: -130px; }
+.きら☆シャン-lp-final::after { right: -130px; bottom: -130px; }
+.きら☆シャン-lp-final-glow { position: absolute; inset: 0; opacity: .7; background-image: radial-gradient(circle, rgba(183,138,63,.32) 1px, transparent 1.5px); background-size: 46px 46px; mask-image: linear-gradient(90deg, #000, transparent 35%, transparent 65%, #000); }
+.きら☆シャン-lp-final .きら☆シャン-lp-inner { position: relative; z-index: 2; }
+.きら☆シャン-lp-final p:not(.きら☆シャン-lp-eyebrow) { margin: 20px 0 30px; color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; }
+.きら☆シャン-lp-final small { margin-top: 14px; display: block; color: var(--ks-gold-dark); }
+.きら☆シャン-lp-button-dark { min-width: 310px; }
+.きら☆シャン-lp-footer { padding: 36px 20px; display: flex; align-items: center; justify-content: center; gap: 25px; border-top: 1px solid var(--ks-line); background: #fff; }
+.きら☆シャン-lp-footer p { color: var(--ks-muted); font-family: "Yu Gothic", sans-serif; font-size: 12px; }
+.きら☆シャン-lp-fixed-cta { display: none; }
+
+.きら☆シャン-lp-motion .きら☆シャン-lp-reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+.きら☆シャン-lp-reveal.きら☆シャン-lp-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .きら☆シャン-lp-motion .きら☆シャン-lp-reveal { opacity: 1; transform: none; transition: none; } .きら☆シャン-lp-button { transition: none; } }
+
+@media (max-width: 820px) {
+  .きら☆シャン-lp-hero { min-height: 800px; display: block; }
+  .きら☆シャン-lp-hero-image { width: 100%; height: 66%; inset: 34% 0 auto; object-position: 63% 38%; }
+  .きら☆シャン-lp-hero-shade { background: linear-gradient(180deg, #fffdf8 0%, rgba(255,253,248,.98) 28%, rgba(255,253,248,.25) 56%, rgba(255,253,248,.1) 100%); }
+  .きら☆シャン-lp-hero-copy { padding-top: 56px; padding-bottom: 0; }
+  .きら☆シャン-lp-hero h1 { font-size: 72px; }
+  .きら☆シャン-lp-hero-lead { font-size: 25px; }
+  .きら☆シャン-lp-hero-copy .きら☆シャン-lp-button { display: none; }
+  .きら☆シャン-lp-hero-points { grid-template-columns: repeat(2, 1fr); }
+  .きら☆シャン-lp-hero-points li { min-height: 70px; }
+  .きら☆シャン-lp-hero-points li:nth-child(2) { border-right: 0; }
+  .きら☆シャン-lp-hero-points li:nth-child(-n+2) { border-bottom: 1px solid var(--ks-line); }
+  .きら☆シャン-lp-feature-grid, .きら☆シャン-lp-steps { grid-template-columns: 1fr; }
+  .きら☆シャン-lp-feature { border-right: 0; border-bottom: 1px solid var(--ks-line); }
+  .きら☆シャン-lp-feature:last-child { border-bottom: 0; }
+  .きら☆シャン-lp-split, .きら☆シャン-lp-delivery .きら☆シャン-lp-inner { grid-template-columns: 1fr; gap: 42px; }
+  .きら☆シャン-lp-keyholder-copy { text-align: center; }
+  .きら☆シャン-lp-delivery-head { text-align: center; }
+}
+
+@media (max-width: 560px) {
+  .きら☆シャン-lp-root { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .きら☆シャン-lp-inner { width: min(100% - 32px, 1080px); }
+  .きら☆シャン-lp-header { height: 58px; padding-inline: 16px; }
+  .きら☆シャン-lp-brand { gap: 8px; font-size: 21px; }
+  .きら☆シャン-lp-brand-mark { width: 29px; height: 29px; font-size: 12px; box-shadow: 0 0 0 3px rgba(183,138,63,.08); }
+  .きら☆シャン-lp-header-cta { display: none; }
+  .きら☆シャン-lp-hero { min-height: 780px; }
+  .きら☆シャン-lp-hero-copy { width: calc(100% - 32px); padding-top: 38px; }
+  .きら☆シャン-lp-kicker { font-size: 12px; }
+  .きら☆シャン-lp-hero h1 { font-size: 56px; }
+  .きら☆シャン-lp-hero h1 span { margin-bottom: 13px; padding-bottom: 9px; font-size: 25px; }
+  .きら☆シャン-lp-hero-lead { margin-top: 18px !important; font-size: 19px; }
+  .きら☆シャン-lp-one-bottle { margin-top: 12px; font-size: 15px; }
+  .きら☆シャン-lp-one-bottle strong { font-size: 32px; }
+  .きら☆シャン-lp-hero-image { height: 70%; inset: 30% 0 auto; object-position: 61% 35%; }
+  .きら☆シャン-lp-hero-points { width: calc(100% - 24px); }
+  .きら☆シャン-lp-hero-points strong { font-size: 15px; }
+  .きら☆シャン-lp-hero-points span { font-size: 10px; }
+  .きら☆シャン-lp-section { padding: 76px 0; }
+  .きら☆シャン-lp-section h2, .きら☆シャン-lp-final h2 { font-size: 34px; }
+  .きら☆シャン-lp-section-lead { font-size: 14px; }
+  .きら☆シャン-lp-feature-grid { margin-top: 36px; }
+  .きら☆シャン-lp-feature { padding: 25px 20px; }
+  .きら☆シャン-lp-feature h3 { font-size: 21px; }
+  .きら☆シャン-lp-product-figure { margin-top: 32px !important; }
+  .きら☆シャン-lp-product-figure img { aspect-ratio: 4 / 5; object-position: center; }
+  .きら☆シャン-lp-keyholder-visual { aspect-ratio: 1 / 1; }
+  .きら☆シャン-lp-product-figure img { aspect-ratio: 4 / 3; }
+  .きら☆シャン-lp-keyholder-visual img { object-position: left bottom; }
+  .きら☆シャン-lp-steps { margin-top: 36px; }
+  .きら☆シャン-lp-steps li { min-height: 280px; }
+  .きら☆シャン-lp-delivery-list article { grid-template-columns: 52px 1fr; gap: 15px; }
+  .きら☆シャン-lp-delivery-list article > span { width: 48px; height: 48px; }
+  .きら☆シャン-lp-delivery-list h3 { font-size: 19px; }
+  .きら☆シャン-lp-final { min-height: 510px; padding: 78px 0; }
+  .きら☆シャン-lp-final p:not(.きら☆シャン-lp-eyebrow) { font-size: 14px; }
+  .きら☆シャン-lp-button-dark { min-width: 0; width: 100%; }
+  .きら☆シャン-lp-footer { padding: 28px 16px; display: block; text-align: center; }
+  .きら☆シャン-lp-footer p { margin-top: 8px; }
+  .きら☆シャン-lp-fixed-cta { position: fixed; z-index: 9999; inset: auto 0 0; display: block; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(255,253,248,.96); border-top: 1px solid var(--ks-line); backdrop-filter: blur(10px); }
+  .きら☆シャン-lp-fixed-cta a { min-height: 54px; display: flex; align-items: center; justify-content: center; gap: 18px; color: #fff; background: linear-gradient(135deg, #c29a53, #8c642a); box-shadow: 0 8px 20px rgba(119,85,36,.22); font-family: "Yu Gothic", sans-serif; font-size: 15px; font-weight: 700; }
+  .きら☆シャン-lp-fixed-cta a:active { transform: scale(.985); }
+}
